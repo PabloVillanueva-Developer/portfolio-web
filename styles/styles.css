@@ -136,6 +136,11 @@ a:visited{
         padding-top: 3%;
         display: flex;
     }
+   
+    .frontend__carousel__container {
+        width: 90%;
+        margin-left: 5%;
+    }
 
     .footer {
         background-color: rgba(20, 28, 34, 0.815);
@@ -313,6 +318,10 @@ a:visited{
         display: flex;
     }
 
+    .frontend__carousel__container {
+        width: 500px;
+    }
+
     .footer {
     margin-top: 1%;
     }
@@ -358,6 +367,13 @@ a:visited{
     }
 
 }
+
+
+.main__section-x2__div-x3__img1{
+    width: 30%;
+
+} 
+    
 
 
 /* EFECTO LATENCIA ICONOS */
