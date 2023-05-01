@@ -27,6 +27,8 @@ a:visited{
 
 @media (min-width: 320px) {
 
+    
+
     .header__section__nav__options {
         display: none;
     }
@@ -117,7 +119,7 @@ a:visited{
 
     .footer {
         background-color: rgba(20, 28, 34, 0.815);
-        margin: 4%;
+        margin: 5%;
         text-align:start;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         padding-top: 2%;
@@ -186,6 +188,26 @@ a:visited{
 
 /* FULLSCREEN */
 @media (min-width: 960px) {
+
+    .header-desplazamiento {
+        animation: desplazamiento-header 1.5s ease-out;
+    }
+
+    .main-desplazamiento {
+        animation: main-desplazamiento 1.5s ease-in-out;
+    }
+
+    .img-desplazamiento {
+        animation: footer-desplazamiento 1.5s ease-out;
+    }
+
+    .footer-desplazamiento {
+        animation: footer-desplazamiento 1.5s ease-out;
+    }
+
+    .desplazamiento-texts {
+        animation: desplazamiento-texts 5s;
+    }
 
     .header__section__div__h1 {
         font-size: 50px;
@@ -324,12 +346,12 @@ a:visited{
         animation: latencia;
         animation-duration: 4.5s;
         animation-iteration-count: infinite;
-        animation-delay: 7s;
+        animation-delay: 5s;
     }
 
     .icon-effects--latencia4 {
         animation: latencia;
-        animation-delay: 10s;
+        animation-delay: 6s;
         animation-duration: 4.5s;
         animation-iteration-count: infinite;
     }
@@ -340,11 +362,11 @@ a:visited{
 /* EFECTO LATENCIA ICONOS */
 @keyframes latencia {
     
-    0% { transform: scale(1);
+    0% { transform: scale(1) rotate(-2deg);
          color:rgb(184, 185, 199)}
-    50% { transform: scale(1.03);
+    50% { transform: scale(1.03) rotate(2deg);
           color: aliceblue;}
-    100% { transform: scale(1);
+    100% { transform: scale(1) rotate(-2deg);
            color:rgb(184, 185, 199)}
 }
 
@@ -353,4 +375,29 @@ a:visited{
     0% { transform: scale(1);}
     50% { transform: scale(1.2);}
     100% { transform: scale(1);}
+}
+
+@keyframes desplazamiento-header {
+    0% {transform: translateY(-30px);}
+    100% { transform: translateY(0);}
+}
+
+@keyframes main-desplazamiento {
+    0% {transform: translatex(-60px);}
+    100% { transform: translateY(0);}
+}
+
+@keyframes desplazamiento-texts {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes footer-desplazamiento {
+    0% {transform: translatey(30px);}
+    100% { transform: translateY(0);}
+}
+
+@keyframes img-desplazamiento {
+    0% {transform: translatey(500px);}
+    100% { transform: translateY(0);}
 }
