@@ -30,7 +30,7 @@ a:visited{
     .animacion__menu-azul--latencia {
         animation-delay: 8s;
         animation: animacion__menu-azul--latencia;
-        animation-duration: 3s;
+        animation-duration: 4s;
         animation-iteration-count: infinite;
     }
 
@@ -66,7 +66,7 @@ a:visited{
 
     .header__section {
         display: flex;
-        background-color: rgba(20, 28, 34, 0.548);
+        background-color: rgba(20, 28, 34, 0.719);
         margin: 4%;
         text-align:start;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -299,7 +299,6 @@ a:visited{
         font-size: 20px;
         display: flex;
         align-items: center;
-        
         padding-top: 5%;
     }
 
@@ -308,8 +307,8 @@ a:visited{
     }
     
     .main__section-x3__div__logos { 
-        width: 50%;
-        margin-left: 25%;
+        width: 70%;
+        margin-left: 15%;
         padding-top: 6%;
         display: flex;
     }
@@ -381,7 +380,7 @@ a:visited{
 
 @keyframes animacion__menu-azul--latencia {
     0% { transform: scale(1);}
-   50% { transform: scale(1.03);}
+   50% { transform: scale(1.25);}
    100% { transform: scale(1);}
 }
          
