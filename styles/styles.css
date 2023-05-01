@@ -27,7 +27,38 @@ a:visited{
 
 @media (min-width: 320px) {
 
-    
+    .animacion__menu-azul--latencia {
+        animation-delay: 8s;
+        animation: animacion__menu-azul--latencia;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    .animacion__menu-azul--brillo:hover {
+        filter: brightness(110%);
+    }
+
+
+    .animacion__apariciones-opacity {
+        animation: animacion__apariciones-opacity 5s;
+    }
+
+    .animacion__img-desplazamiento {
+        animation: footer-desplazamiento 1.5s ease-out;
+    }
+
+    .header-desplazamiento {
+        animation: desplazamiento-header 1.5s ease-out;
+    }
+
+    .main-desplazamiento {
+        animation: main-desplazamiento 1.5s ease-in-out;
+    }
+
+
+    .footer-desplazamiento {
+        animation: footer-desplazamiento 1.5s ease-out;
+    }
 
     .header__section__nav__options {
         display: none;
@@ -69,18 +100,7 @@ a:visited{
 
 
     .header__section__nav__button {
-        height: 80px;
-        
-    }
-
-    .icon-effects:hover {
-        filter: brightness(110%);
-    }
-
-    .icon-effects--latencia {
-        animation: latencia-boton;
-        animation-duration: 4.6s;
-        animation-iteration-count: infinite;
+        height: 80px;        
     }
 
     .main__section {
@@ -189,25 +209,7 @@ a:visited{
 /* FULLSCREEN */
 @media (min-width: 960px) {
 
-    .header-desplazamiento {
-        animation: desplazamiento-header 1.5s ease-out;
-    }
-
-    .main-desplazamiento {
-        animation: main-desplazamiento 1.5s ease-in-out;
-    }
-
-    .img-desplazamiento {
-        animation: footer-desplazamiento 1.5s ease-out;
-    }
-
-    .footer-desplazamiento {
-        animation: footer-desplazamiento 1.5s ease-out;
-    }
-
-    .desplazamiento-texts {
-        animation: desplazamiento-texts 5s;
-    }
+   
 
     .header__section__div__h1 {
         font-size: 50px;
@@ -324,34 +326,34 @@ a:visited{
         margin-left: 9%;
     }
     
-    .icon-effects:hover {
+    .animacion__scale-menu-fullscreen:hover {
         transform: scale(1.1);
         filter: brightness(150%);
     }
 
-    .icon-effects--latencia1 {
-        animation: latencia;
+    .animacion__latencia-menu-fullscreen1 {
+        animation: animacion__latencia-menu-fullscreen  ;
         animation-duration: 4.5s;
         animation-iteration-count: infinite;
     }
 
-    .icon-effects--latencia2 {
-        animation: latencia;
+    .animacion__latencia-menu-fullscreen2 {
+        animation: animacion__latencia-menu-fullscreen;
+        animation-duration: 4.5s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+    }
+
+    .animacion__latencia-menu-fullscreen3 {
+        animation: animacion__latencia-menu-fullscreen;
         animation-duration: 4.5s;
         animation-iteration-count: infinite;
         animation-delay: 3s;
     }
 
-    .icon-effects--latencia3 {
-        animation: latencia;
-        animation-duration: 4.5s;
-        animation-iteration-count: infinite;
-        animation-delay: 5s;
-    }
-
-    .icon-effects--latencia4 {
-        animation: latencia;
-        animation-delay: 6s;
+    .animacion__latencia-menu-fullscreen4 {
+        animation: animacion__latencia-menu-fullscreen;
+        animation-delay: 4s;
         animation-duration: 4.5s;
         animation-iteration-count: infinite;
     }
@@ -360,7 +362,7 @@ a:visited{
 
 
 /* EFECTO LATENCIA ICONOS */
-@keyframes latencia {
+@keyframes animacion__latencia-menu-fullscreen {
     
     0% { transform: scale(1) rotate(-2deg);
          color:rgb(184, 185, 199)}
@@ -370,12 +372,19 @@ a:visited{
            color:rgb(184, 185, 199)}
 }
 
-@keyframes latencia-boton {
+@keyframes animacion__scale-menu-fullscreen {
     
     0% { transform: scale(1);}
     50% { transform: scale(1.2);}
     100% { transform: scale(1);}
 }
+
+@keyframes animacion__menu-azul--latencia {
+    0% { transform: scale(1);}
+   50% { transform: scale(1.03);}
+   100% { transform: scale(1);}
+}
+         
 
 @keyframes desplazamiento-header {
     0% {transform: translateY(-30px);}
@@ -387,7 +396,7 @@ a:visited{
     100% { transform: translateY(0);}
 }
 
-@keyframes desplazamiento-texts {
+@keyframes animacion__apariciones-opacity {
     0% {opacity: 0%;}
     100% {opacity: 100%;}
 }
@@ -397,7 +406,7 @@ a:visited{
     100% { transform: translateY(0);}
 }
 
-@keyframes img-desplazamiento {
+@keyframes animacion__img-desplazamiento {
     0% {transform: translatey(500px);}
     100% { transform: translateY(0);}
 }
