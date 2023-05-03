@@ -10,11 +10,11 @@
 
 @font-face {
     font-family: Fuente1;
-    src: url(../Assets/fonts/Fuente1.ttf);
+    src: url(../assets/fonts/Fuente1.ttf);
 }
 
 .background {
-    background-image: url(../Assets/images/Fondo\ Web\ 3.png);
+    background-image: url(../assets/images/Fondo\ Web\ 3.png);
     height: 1px;
 }
 
