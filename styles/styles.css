@@ -6,6 +6,7 @@
 	list-style: none;
 	text-decoration: none;
 	box-sizing: border-box;
+    color: aliceblue;
 }	
 
 @font-face {
@@ -26,26 +27,6 @@ a:visited{
 /* VISTA MOBILE */
 
 @media (min-width: 320px) {
-
-    .animacion__menu-azul--latencia {
-        animation-delay: 8s;
-        animation: animacion__menu-azul--latencia;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-    }
-
-    .animacion__menu-azul--brillo:hover {
-        filter: brightness(110%);
-    }
-
-
-    .animacion__apariciones-opacity {
-        animation: animacion__apariciones-opacity 5s;
-    }
-
-    .animacion__img-desplazamiento {
-        animation: footer-desplazamiento 1.5s ease-out;
-    }
 
     .header-desplazamiento {
         animation: desplazamiento-header 1.5s ease-out;
@@ -72,8 +53,7 @@ a:visited{
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         padding-top: 2%;
         border-radius: 1rem;
-        box-shadow: -10px 6px 15px -3px rgba(0, 0, 0, 0.658);
-        
+        box-shadow: -10px 6px 15px -3px rgba(0, 0, 0, 0.658);        
     }
 
     .header__section__div {
@@ -81,8 +61,7 @@ a:visited{
         display: flex;
         justify-content: center;
         align-items: center;
-        order: 2;
-        
+        order: 2; 
     }
 
     .header__section__div__h1 {
@@ -98,10 +77,14 @@ a:visited{
         justify-content: start;        
     }
 
-
     .header__section__nav__button {
         height: 80px;        
     }
+
+    .header__secttion__nav__div
+        { 
+
+        }
 
     .main__section {
         padding: 3%;
@@ -164,11 +147,36 @@ a:visited{
         flex-direction: column;
         color: aliceblue;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-weight: bold;
         margin-left: 50px;
         row-gap: 10%;
-        text-shadow: none;    
+        text-shadow: none;
     }
+
+    .footer__list__a {
+        text-decoration: none;
+    }
+
+    .animacion__menu-azul--latencia {
+        animation-delay: 8s;
+        animation: animacion__menu-azul--latencia;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    .animacion__menu-azul--brillo:hover {
+        filter: brightness(110%);
+    }
+
+
+    .animacion__apariciones-opacity {
+        animation: animacion__apariciones-opacity 5s;
+    }
+
+    .animacion__img-desplazamiento {
+        animation: footer-desplazamiento 1.5s ease-out;
+    }
+
+
 
 } /*CIERRE @MEDIA MOBILE*/
 
@@ -200,6 +208,7 @@ a:visited{
 
 
 /* MEDIUM-SCREEN */
+
 @media (min-width: 720px) {
     .header__section__div__h1 {
         font-size: 60px;
@@ -208,13 +217,13 @@ a:visited{
     .footer__list {
         margin-left: 10%;
     }
+
 }
 
 
 /* FULLSCREEN */
-@media (min-width: 960px) {
 
-   
+@media (min-width: 960px) {
 
     .header__section__div__h1 {
         font-size: 50px;
@@ -242,6 +251,7 @@ a:visited{
         width: 100%;
         font-size: 30px;
         font-family: fuente1;
+   
     }
 
     .header__section__nav__container {
@@ -262,6 +272,10 @@ a:visited{
         order: 2;
         display: flex;
         justify-content: center;
+    }
+
+    header__section__nav__ul__a {
+        text-decoration: none;
     }
 
     .main__section {
@@ -323,7 +337,7 @@ a:visited{
     }
 
     .footer {
-    margin-top: 1%;
+        margin-top: 1%;
     }
 
     .footer__sitemap {
@@ -343,6 +357,7 @@ a:visited{
         animation: animacion__latencia-menu-fullscreen  ;
         animation-duration: 4.5s;
         animation-iteration-count: infinite;
+        text-decoration: none;
     }
 
     .animacion__latencia-menu-fullscreen2 {
@@ -350,6 +365,7 @@ a:visited{
         animation-duration: 4.5s;
         animation-iteration-count: infinite;
         animation-delay: 2s;
+        text-decoration: none;
     }
 
     .animacion__latencia-menu-fullscreen3 {
@@ -357,6 +373,7 @@ a:visited{
         animation-duration: 4.5s;
         animation-iteration-count: infinite;
         animation-delay: 3s;
+        text-decoration: none;
     }
 
     .animacion__latencia-menu-fullscreen4 {
@@ -364,19 +381,19 @@ a:visited{
         animation-delay: 4s;
         animation-duration: 4.5s;
         animation-iteration-count: infinite;
+        text-decoration: none;
     }
 
-}
 
-
-.main__section-x2__div-x3__img1{
+    .main__section-x2__div-x3__img1{
     width: 30%;
-
 } 
+
+}
     
 
 
-/* EFECTO LATENCIA ICONOS */
+/* ANIMACIONES*/
 @keyframes animacion__latencia-menu-fullscreen {
     
     0% { transform: scale(1) rotate(-2deg);
