@@ -87,21 +87,21 @@ a:visited{
     }
 
     .header__section__nav-hamburguer__div {
-        width: 100pxpx;
+        width: 100px;
         height: 200px;
         background-color: rgb(105, 105, 145);
-        position: absolute;
+        position: relative;
         top: 100px;
         border-radius: 1rem;
         display: flex;
+        z-index: 5;
         }
         
     .header__section__nav-hamburguer__div__ul {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        
-
+        z-index: 6;
         }
 
     .main__section {
