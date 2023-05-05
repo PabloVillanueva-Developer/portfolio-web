@@ -11,48 +11,51 @@
 
 <body class="background"> 
    
-    <header class="header-desplazamiento">
+    <header class="header-intro-slide">
         
-        <section class="header__section ">
+        <section class="header__section">
 
             <div class="header__section__div">
-                <h1 class="header__section__div__h1 animacion__apariciones-opacity"> Programador <br class="header__section__div__br"> Fullstack</h1> 
+                <h1 class="header__section__div__h1 animacion__apariciones-opacity"> Programador <br class="header__section__div__h1__br"> Fullstack</h1> 
             </div>     
         
-            <nav class="header__section__nav">   
-
+            <nav class="header__section__nav-hamburger header__section__nav-fullscreen">   
              
-                <a class="animacion__apariciones-opacity" href="./pages/contacto.html"><img class="header__section__nav__button animacion__menu-azul--brillo  animacion__menu-azul--latencia" src="./assets/images/Circulo Boton Azul3.png" alt="Menu Desplegable" /></a>
-                
-                <!-- MENU FULLSCREEN -->
-                <ul class="header__section__nav__options header__section__nav__container animacion__apariciones-opacity"  >
+                <input type="checkbox" id="nav-button" hidden >  
+                <label for="nav-button">
+                  <img class="header__section__nav__label__button animacion__menu-azul--brillo  animacion__menu-azul--latencia animacion__apariciones-opacity" src="./assets/images/Circulo Boton Azul3.png" alt="Menu Desplegable" />
+                </label>  
+
+                  <!-- MENU FULLSCREEN -->
+
+                <ul class="header__section__nav__ul header__section__nav-fullscreen__container animacion__apariciones-opacity"  >
                     <a class="animacion__scale-menu-fullscreen animacion__latencia-menu-fullscreen1" href="./pages/frontend.html"><li>Frontend</li></a>
                     <a class="animacion__scale-menu-fullscreen animacion__latencia-menu-fullscreen2" href="./pages/backend.html"><li>Backend </li></a>
                     <a class="animacion__scale-menu-fullscreen animacion__latencia-menu-fullscreen3" href="./pages/hoja-de-ruta&skils.html"><li>About me</li></a>
                     <a class="animacion__scale-menu-fullscreen animacion__latencia-menu-fullscreen4" href="./pages/contacto.html"><li>Contact </li></a>
                 </ul>
-
+  
+                  
+                  <!-- MENU HAMBURGUESA -->
                 
-                <!-- MENU EMERGENTE
-                <div>
-                    <ul class="nav__button__hamburguer">              
-                        <li> <a href="./index.html"><img class="img-size-buttons img-effects" src="./assets/Images/Circulo Boton Azul.png" alt="Inicio">     <p>Inicio</p> </li>
-                        <li> <a href="./Pages/Frontend.html"><img class="img-size-buttons img-effects" src="./assets/Images/Circulo Boton Azul.png" alt="Frontend"></a>Frontend </li>
-                        <li> <a href="./Pages/Backend.html"><img class="img-size-buttons img-effects" src="./assets/Images/Circulo Boton Azul.png" alt="Backend" ></a>Backend </li>
-                        <li> <a href="./Pages/hoja-de-ruta&Skils.html"><img class="img-size-buttons img-effects" src="./assets/Images/Circulo Boton Azul.png" alt="Hoja de Ruta" ></a> <p class="hoja-ruta-p"> Hoja de Ruta & Skills </p></li>
-                        <li  ><a href="./Pages/Contacto.html"><img class="img-size-buttons img-effects" src="./assets/Images/Circulo Boton Azul.png" alt="Contacto" ></a>Contacto</li>
-                    </ul> 
+                <div class="header__section__nav-hamburguer__div">
+                    <ul class="header__section__nav-hamburguer__div__ul">
+                      <a class="header__section__nav-hamburguer__div__ul__a" href="./pages/frontend.html"><li>Frontend</li></a>
+                      <a class="header__section__nav-hamburguer__div__ul__a" href="./pages/backend.html"><li>Backend </li></a>
+                      <a class="header__section__nav-hamburguer__div__ul__a" href="./pages/hoja-de-ruta&skils.html"><li>About me</li></a>
+                      <a class="header__section__nav-hamburguer__div__ul__a" href="./pages/contacto.html"><li>Contact </li></a>
+                    </ul>
                 </div>
-                 -->                       
-                
-            </nav>  
+                                       
+                  
+              </nav>  
 
         </section>
 
     </header>        
  
         
-    <main class="main-desplazamiento">°
+    <main class="main-intro-slide">°
  
         <section class="main__section"> 
                     
@@ -63,17 +66,18 @@
                     
                     <section class="main__section-x2 animacion__apariciones-opacity">
                         <a class="main__section-x2__a" href="./pages/contacto.html">
-                            <img class="main__section-x2__img animacion__img-desplazamiento" src="./assets/images/FotoFondoCircular1.png" alt="FOTO PABLO VILLANUEVA" />
+                            <img class="main__section-x2__a__img animacion__img-desplazamiento" src="./assets/images/FotoFondoCircular1.png" alt="FOTO PABLO VILLANUEVA" />
                         </a>
 
                         <section>
-                            <p class="main__section-x3__text">
+                            <p class="main__section-x3__p">
                                 Desde hace algún tiempo, me dedico al diseño y desarrollo de sitios web con el objetivo de crear experiencias en línea atractivas e intuitivas para los usuarios. Me encanta trabajar en proyectos desafiantes y colaborar en equipos de desarrollo para lograr soluciones creativas e innovadoras.
                             </p>
                                  
-                        
+                            <!-- LOGOS -->
+
                             <div class="main__section-x3__div">   
-                                <img class="main__section-x3__div__logos"  src="./assets/images/LogosConsolidados.png" alt="Logos Programacion" />
+                                <img class="main__section-x3__div__img-logos"  src="./assets/images/LogosConsolidados.png" alt="Logos Programacion" />
                             </div>
                         </section>
                         
@@ -85,9 +89,9 @@
     </main>
 
 
-    <footer class="footer footer-desplazamiento">
-        <p class="footer__sitemap animacion__apariciones-opacity">Sitemap</p>
-        <ul class="footer__list animacion__apariciones-opacity">
+    <footer class="footer footer-intro-slide">
+        <p class="footer__p animacion__apariciones-opacity">Sitemap</p>
+        <ul class="footer__ul animacion__apariciones-opacity">
             <a href="./index.html"><li>Home</li></a>
             <a href="./pages/frontend.html"><li>Frontend</li></a>
             <a href="./pages/backend.html"><li>Backend</li></a>
