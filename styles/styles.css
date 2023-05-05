@@ -78,32 +78,44 @@ a:visited{
     }
 
     .header__section__nav__button {
-        height: 80px;        
-    }
-
-    .header__section__nav-hamburger{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .header__section__nav-hamburguer__div {
-        width: 100px;
-        height: 200px;
-        background-color: rgb(105, 105, 145);
-        position: absolute;
-        top: 100px;
-        border-radius: 1rem;
-        display: flex;
-        z-index: 5;
-        }
+        height: 80px;
         
+    }      
+    
+
+    #nav-button:checked ~ .header__section__nav-hamburguer__div  {
+        display: block;
+    }
+   
+    .header__section__nav-hamburguer__div {
+        width: 160px;
+        height: 300px;
+        background-color: rgb(18, 75, 122);
+        position: absolute;
+        top: 99px;
+        border-radius: 1rem;
+        display: none;
+        z-index: 2;
+        }  
+
     .header__section__nav-hamburguer__div__ul {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        z-index: 6;
+        gap: 28px;
+        font-size: 25px;
+        width: 80%;
+        margin: 10px 0px;
+        padding-left: 15px;
+        font-family: fuente1;
         }
 
+        .header__section__nav-hamburguer__div__ul__a {
+            text-decoration: none;
+        }
+
+        
+    
     .main__section {
         padding: 3%;
         display: flex;
@@ -210,6 +222,10 @@ a:visited{
         font-size: 40px;
     }
 
+    .header__section__nav-hamburguer__div {
+        top: 178px;
+    } 
+    
     .main__section__text {
         font-size: 20px;
     }
@@ -232,6 +248,10 @@ a:visited{
         font-size: 60px;
     }
 
+    .header__section__nav-hamburguer__div {
+        top: 195px;
+    } 
+
     .footer__list {
         margin-left: 10%;
     }
@@ -243,13 +263,20 @@ a:visited{
 
 @media (min-width: 960px) {
 
+    #nav-button:checked ~ .header__section__nav-hamburguer__div  {
+        display: none;
+    }
+   
+
     .header__section__nav-hamburguer__div {
         display: none;
        }
 
-    .header__section__nav-hamburguer__div__ul {
+       .header__section__nav__button {
         display: none;
-    }
+       }
+
+   
 
     .header__section__div__h1 {
         font-size: 50px;
@@ -264,9 +291,7 @@ a:visited{
         display: none;
     }
 
-    .header__section__nav__button {
-        display: none;
-    }
+   
 
     .header__section__nav__options {
         display: flex;
