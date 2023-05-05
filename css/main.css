@@ -1,0 +1,30 @@
+/* RESET & GENERALS*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+
+@font-face {
+  font-family: Fuente1;
+  src: url(../assets/fonts/Fuente1.ttf);
+}
+.background {
+  background-image: url(../assets/images/Fondo\ Web\ 3.png);
+  height: 1px;
+}
+
+a:visited {
+  color: aliceblue;
+}
+
+@media (min-width: 320px) {
+  .header-intro-slide {
+    animation: desplazamiento-header 1.5s ease-out;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
