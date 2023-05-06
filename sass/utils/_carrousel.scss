@@ -1,0 +1,20 @@
+
+/* VISTA MOBILE */
+
+@media (min-width: 320px) {
+   
+    .frontend__carousel__container {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+
+/* VISTA FULLSCREEN */
+
+@media (min-width: 960px) {
+
+    .frontend__carousel__container {
+    width: 430px;
+    }
+}

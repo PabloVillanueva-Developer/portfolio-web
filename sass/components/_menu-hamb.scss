@@ -1,0 +1,10 @@
+
+/* VISTA MOBILE */
+
+@media (min-width: 320px) {
+    
+    #nav-button:checked ~ .header__section__nav-hamburguer__div  {
+        display: flex;
+        justify-content: center;
+    }
+}
