@@ -15,12 +15,18 @@
 }
 
 .background {
-    background-image: url(../assets/images/Fondo\ Web\ 3.png);
+    background-color: rgb(7, 18, 29);
     height: 1px;
 }
 
 a:visited{
     color: aliceblue;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    
 }
 
 

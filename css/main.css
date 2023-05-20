@@ -13,7 +13,7 @@
   src: url(../assets/fonts/Fuente1.ttf);
 }
 .background {
-  background-image: url(../assets/images/Fondo\ Web\ 3.png);
+  background-color: rgb(7, 18, 29);
   height: 1px;
 }
 
@@ -21,11 +21,17 @@ a:visited {
   color: aliceblue;
 }
 
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* MOBILE */
 @media (min-width: 320px) {
   .header__section {
     display: flex;
     background-color: rgba(20, 28, 34, 0.719);
+    margin: 4%;
     margin: 4%;
     text-align: start;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -37,11 +43,13 @@ a:visited {
     width: 100%;
     display: flex;
     justify-content: center;
+    justify-items: center;
     align-items: center;
     order: 2;
+    margin-right: 5%;
   }
   .header__section__div__h1 {
-    font-size: 30px;
+    font-size: 1.9em;
     font-family: fuente1;
     color: aliceblue;
     text-shadow: -4px 3px 8px rgba(0, 0, 0, 0.82);
@@ -49,10 +57,14 @@ a:visited {
   }
   .header__section__nav-fullscreen {
     display: flex;
+    flex-direction: column;
     justify-content: start;
+    transform: scale(0.6);
+    z-index: 3;
+    position: relative;
   }
   .header__section__nav__label__button {
-    height: 80px;
+    width: 100%;
   }
   .header__section__nav__ul {
     display: none;
@@ -62,7 +74,7 @@ a:visited {
     height: 300px;
     background-color: rgb(18, 75, 122);
     position: absolute;
-    top: 99px;
+    top: 100%;
     border-radius: 1rem;
     display: none;
     z-index: 2;
@@ -84,23 +96,46 @@ a:visited {
 }
 /* TABLET */
 @media (min-width: 480px) {
+  .header__section {
+    display: flex;
+    margin: 4%;
+    text-align: start;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    padding-top: 2%;
+    border-radius: 1rem;
+    box-shadow: -10px 6px 15px -3px rgba(0, 0, 0, 0.658);
+  }
+  .header__section__div {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .header__section__div__h1 {
+    font-size: 2.5em;
+    text-align: end;
+  }
+  .header__section__nav-fullscreen {
+    transform: scale(0.7);
+    margin-left: 10%;
+  }
   .header__section__nav__button {
     height: 150px;
   }
-  .header__section__nav__button__div__h1 {
-    font-size: 40px;
-  }
   .header__section__nav-hamburguer__div {
-    top: 115px;
+    top: 100%;
   }
 }
 /* MEDIUM SCREEN */
 @media (min-width: 720px) {
   .header__section__div__h1 {
-    font-size: 60px;
+    font-size: 4em;
+    text-align: end;
+  }
+  .header__section__div {
+    justify-content: center;
   }
   .header__section__nav-hamburguer__div {
-    top: 140px;
+    top: 100%;
   }
 }
 /*FULLSCREEN  */
@@ -160,7 +195,7 @@ a:visited {
     display: flex;
     flex-direction: column;
     padding-top: 5%;
-    background-color: rgba(18, 75, 122, 0.637);
+    background-color: rgba(28, 69, 102, 0.637);
     border-radius: 1rem;
     width: 90%;
     margin-left: 5%;
