@@ -1,0 +1,52 @@
+@media (min-width:320px) {
+
+.main__form {
+    padding: 3%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-top: 12px;
+    padding-bottom: 100px;
+    background-color: rgba(28, 69, 102, 0.637);
+    border-radius: 1rem;
+    width: 90%;
+    height: 233px;
+    margin-left: 5%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: fuente1;
+    text-shadow: -5px 2px 3px rgba(0,0,0,0.82);
+    box-shadow: -10px 6px 15px -3px rgba(0, 0, 0, 0.658);  
+    font-family: fuente1;
+
+        &__label {
+            
+           
+
+            &__input {
+                color: black;
+                border-radius: 1rem;
+                font-family: fuente1;
+                height: 25px;
+                box-shadow: -10px 6px 15px -3px rgba(0, 0, 0, 0.658);
+                border: 0;
+               
+            }
+        }
+
+}
+
+}
+
+@media (min-width:960px) {
+
+    .main__form {    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        padding: 0;
+    }
+    
+}
